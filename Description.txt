@@ -1,0 +1,64 @@
+I have made this file on order 
+to manage somehow with increadible swarm of the project files (received from Buzzer)
+(made by Idot)
+
+=========================================================================
+File						Description
+=========================================================================
+WolfGL.h                    deraws debug info
+							...........and so on	
+-------------------------------------------------------------------------
+map.c						Raycaasting, tile checks, door checks, etc
+							?????????????
+-------------------------------------------------------------------------
+cl_input.c					KEY BUTTONS
+input.c                     !!!!!!!!!!attention
+keys.c						!!!!!!!!!!compare 'em all
+-------------------------------------------------------------------------
+cl_main.c                   has the following string 
+                            // FIXME! Steb, remove shit! Make real Client - Server
+							so I suspect that cl means client
+-------------------------------------------------------------------------
+sv_main.c					I think that it must be the server
+							however it is empty
+-------------------------------------------------------------------------
+version.c					checking is game Wolf3D or SOD
+							list of objects,subsidiaries, and bosses
+							constants, episodes, levels, sounds
+							ceiling colors, musics
+-------------------------------------------------------------------------
+Player.c					player struct 
+							pos, health, ammo, weapons, curweapon, 
+							chsweapon, lives, score,nextextra
+-------------------------------------------------------------------------
+Cmd.c						commands & cvars
+							COMMAND BUFFER
+							has astring 
+							//Cbuf_InsertText
+							//FIXME: actually change the command buffer to do less copying
+-------------------------------------------------------------------------
+render.c
+Math.c						Trighonomethry & math functions...          
+Q_fns.c						LIBRARY REPLACEMENT FUNCTIONS
+ai_com.c					AI Functions
+Menu.c						Wolfenstein Control Panel! 
+powerups.c					PowerUps handling code
+video.c						??high level video
+wl_text.c					Wolf 'Rich Text'
+Sprites.c					Sprites Handling Code (server)
+fmopl.c						FM OPL2 synth
+fontman.c					Font Manager
+Pwalls.c					PushWalls Code
+
+
+============================================================================================
+
+ SS  H  H III TTTTT !! 
+S  S H  H  I  T T T !! 
+ S   HHHH  I    T   !! 
+  S  H  H  I    T   !!
+S  S H  H  I    T   
+ SS  H  H III   T   !!
+
+I just found that files from "OldHeaders" folder are included by files from other folders!!!
+FUCK!!!! Why this folder is called by so confusing fucken name?

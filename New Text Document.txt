@@ -1,0 +1,17 @@
+original C/C++ options by DarkOne
+/nologo /ML /W3 /GX /Ox /Ot /Og /Op /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/WolfGL.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+
+
+
+
+
+
+
+
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/MD3 Animation.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+
+
+
+
+
+/ML /W3 /GX /O2 /Fo"Release/" 

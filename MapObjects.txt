@@ -1,0 +1,38 @@
+Map Objects
+  
+Name                              Map-ID    Hex	   Index
+=========================================================
+Nazy-Banner (on a Stone Wall)       3		0x3	
+Hitler Portrait(on a Stone Wall)    4		0x4		 6
+Cell                                5		0x5
+Iron-Eagle (a Statue)               6		0x6
+Cell(with a Sceleton)               7		0x7
+Iron-Eagle (Poster)                10		0xA
+Hitler Portrait(on a Wood Wall)    11		0xB		20
+Anonuncment (on a Metall Wall)     14		0xE
+(two kinds)
+Outdoor                            16
+(two kinds)
+Swastics(on a red bricks)          18
+Iron-Eagle(a Banner)               20		
+Lift Inside                        21
+(two kinds)
+Lift Inside                        21
+(SOD only)
+Iron-Cross                         23
+Anonuncment (on a Stone Wall)      28
+(two kinds)
+Hitler Portrait(a Stained Glass)   33
+Wall with a hole                   37
+Anonuncment (on a Blue Wall)       41
+(two kinds)
+Map                                43
+Nazy-Banner (on a...)              47
+Hitler Portrait(Huge)              49
+Nazy-Banner (on a Stone Wall)      52
+(SOD only)
+Swastics(on a Stone Wall)          53
+(SOD only)
+Lift Inside                        60
+(SOD only)
+

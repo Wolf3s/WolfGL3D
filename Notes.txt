@@ -1,0 +1,127 @@
+WolfGL.h     void CheckUsable(int x, int y, int dir)
+
+
+// draw celing & floor [if textured/fogged]
+	DrawCelFloor();//moved my Idot because of skeletons
+// draw walls
+	R_RayCast(x, y, angle, ANG_90);
+	glEnable(GL_DEPTH_TEST);
+// draw celing & floor [if textured/fogged]
+//	DrawCelFloor();
+// draw sprites
+	DrawSprites();
+
+
+
+
+
+
+6.8 depthWrite
+By default, writes to the depth buffer when depthFunc passes will happen for opaque surfaces and not for translucent surfaces. Blended surfaces can have the depth writes forced with this function.
+
+
+
+
+wl57 64 65 69 -marble
+10 67 purple
+w 69 60 - brown stone
+w 06  - bed
+
+fix fog!!
+
+instead t3DModel create two types one for MD3 and another for skin!
+the new type for skins must have a data whether it is for all res or for low only!
+BUt don't forget about:
+	m_skins[0].pMaterials=m_model[0].pMaterials;
+	m_skins[0].numOfObjects=m_model[0].numOfObjects;
+	m_skins[0].numOfMaterials=m_model[0].numOfMaterials;	
+	m_skins[0].pObject=m_model[0].pObject;	
+
+
+
+
+check folders:  qcommon & qshared & win32
+
+////////////////////////////////////////////OPTMIZE
+//1 Eron-Eagle
+//-1 Eron-Eagle fallen
+//2 Potrait
+//3 Poster
+//4 Treasure
+
+
+6.2.6 Technical Information/Limitations Regarding Blend Modes: 
+The Riva 128 graphics card supports ONLY the following blend modes:
+GL_ONE, GL_ONE
+GL_DST_COLOR, GL_ZERO
+GL_ZERO, GL_SRC_COLOR
+GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA
+GL_ONE_MINUS_SRC_ALPHA, GL_SRC_ALPHA
+
+
+CModelMD3::RenderModel(t3DModel *pModel, t3DModel *pSkin)
+		if(true)//Fix!!!!!!!!!!
+
+
+	UpdateModel(&m_model[0]);// DO NOT FORGET TO OPTIMIZE!!!!!!!!
+	UpdateModel(&m_model[1]);
+	UpdateModel(&m_model[2]);
+
+	DrawLink(&m_model[LOD],&m_skins[0]);
+
+
+pModel->pLinks[i];
+
+
+void CModelMD3::LoadModelTextures(t3DModel *pModel, LPSTR strPath)
+
+
+bool CLoadMD3::LoadSkin(t3DModel *pSkin, t3DModel *pModel, LPSTR strSkin)//fix carefully
+
+loadMd3.ImportMD3(&m_model, str_Model)
+
+	UpdateModel(&m_model[LOD]);///////////temporary
+	DrawLink(&m_model[LOD]);
+
+
+
+CModelMD3::LoadModel(
+	CLoadMD3 loadMd3;// This object allows us to load each .md3 and .skin file
+	loadMd3.ImportMD3(&m_model, str_Model))
+	loadMd3.LoadSkin(&m_model, strSkin)
+
+
+Optimize   void DrawCelFloor(void)
+
+
+
+extern void CheckDistanceSquares(void)(//optimize
+
+
+MD3_Man.cpp
+	srand(0);//Intialization of  Random Number Generator
+	//Fix it!-  it should be inicalizaed by time!!!
+
+Stove -печь
+Oil drum
+sink - умывальник
+utensils - посуда
+rack
+
+build.h - I think I should ask DarkOne why BUILD=90 ?
+
+
+void read_png_rgba(const char * filename, glh::array2<glh::vec4ub> & image)
+void make_rgba_texture(const array2<vec4ub> & rgb, bool mipmapped)
+
+	array2<vec3ub> img;
+
+	for(int i=0; i < 5; i++)
+	{
+		textures[i].bind();
+		textures[i].parameter(GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+		img = array2<vec3ub>();
+		read_png_rgb(images[i], img);
+		if(img.get_width() == 0)
+		{ cerr << "Unable to read image \"" << images[i] << "\"!" << endl; }
+		make_rgb_texture(img);
